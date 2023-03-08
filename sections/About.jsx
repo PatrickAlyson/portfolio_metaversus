@@ -12,12 +12,12 @@ const About = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="innerWidth mx-auto flexCenter flex-col"
+      className="innerWidth flexCenter mx-auto flex-col"
     >
       <TypingText title="| About Metaversus" textStyles="text-center" />
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+        className="mt-[8px] text-center text-[20px] font-normal text-secondary-white sm:text-[32px]"
       >
         <span className="font-extrabold text-white">Metaverse </span>
         is a new thing in the future, where you can enjot the virtual world by
@@ -35,7 +35,7 @@ const About = () => (
       <motion.img
         variants={fadeIn("up", "tween", 0.3, 1)}
         src="/arrow-down.svg"
-        className="w-[18px] h-[28px] object-contain mt-[28px]"
+        className="mt-[28px] h-[28px] w-[18px] object-contain"
       />
     </motion.div>
   </section>
