@@ -1,8 +1,42 @@
-'use client';
+"use client";
+
+import { motion } from "framer-motion";
+import { TypingText, NewFeatures, TitleText } from "../components";
+import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
+import { newFeatures } from "../constants";
 
 const WhatsNew = () => (
-  <section>
-    What's new section
+  <section className="paddings relative z-10">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="innerWidth mx-auto flex flex-col gap-8 lg:flex-row"
+    >
+      <motion.div
+        variants={fadeIn("right", "tween", 0.2, 0.1)}
+        className="flex flex-[0.75] flex-col justify-center"
+      >
+        <TypingText title="| What's New?" />
+        <TitleText title={<>What's new about Metaversus?</>} />
+        <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+          {newFeatures.map((feature) => (
+            <NewFeatures key={feature.title} {...feature} />
+          ))}
+        </div>
+      </motion.div>
+      <motion.div
+        variants={planetVariants("right")}
+        className="flexCenter flex-1"
+      >
+        <img
+          src="/whats-new.png"
+          alt="get-started"
+          className="w-[90%]h-[90%] object-contain"
+        />
+      </motion.div>
+    </motion.div>
   </section>
 );
 
