@@ -1,11 +1,11 @@
 "use client";
+import { useState, useEffect } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { navVariants, modalVariants } from "../utils/motion";
-import { useState, useEffect } from "react";
 import { socials } from "../constants";
 
-function Navbar() {
+const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const modalToggle = () => {
@@ -24,7 +24,7 @@ function Navbar() {
         whileInView="show"
         className="xPaddings relative py-8"
       >
-        <div className="gradient-01 absolute inset-0 w-[50%]"></div>
+        <div className="gradient-01 absolute inset-0 w-[50%]" />
 
         <div className="innerWidth mx-auto flex justify-between gap-8">
           <img
@@ -105,13 +105,13 @@ function Navbar() {
                 </div>
               </div>
 
-              <div className="bgClip absolute bottom-0 left-0 -z-10 h-[30%] w-full bg-[#1A232E]"></div>
+              <div className="bgClip absolute bottom-0 left-0 -z-10 h-[30%] w-full bg-[#1A232E]" />
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
     </>
   );
-}
+};
 
 export default Navbar;

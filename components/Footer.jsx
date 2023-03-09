@@ -11,7 +11,7 @@ const Footer = () => (
     whileInView="show"
     className="paddings relative py-8"
   >
-    <div className="footer-gradient"></div>
+    <div className="footer-gradient" />
     <div className="innerWidth mx-auto flex flex-col gap-8">
       <div className="flex flex-wrap items-center justify-between gap-5">
         <h4 className="text-[44px] font-bold text-white md:text-[64px]">
