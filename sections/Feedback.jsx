@@ -16,7 +16,7 @@ const Feedback = () => (
         variants={fadeIn("right", "tween", 0.2, 1)}
         className="gradient-05 relative flex flex-[0.5] flex-col justify-end rounded-[32px] border border-[#6a6a6a] p-4 sm:p-8 lg:max-w-[370px]"
       >
-        <div className="feedback-gradient"></div>
+        <div className="feedback-gradient -z-10"></div>
         <div>
           <h4 className="text-[26px] font-bold leading-[36px] text-white sm:text-[32px] sm:leading-[40px]">
             Samantha

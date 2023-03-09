@@ -7,7 +7,7 @@ import { startingFeatures } from "../constants";
 
 const GetStarted = () => (
   <section className="paddings relative z-10">
-    <div className="gradient-04 z-0"></div>
+    <div className="gradient-04 -z-10"></div>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

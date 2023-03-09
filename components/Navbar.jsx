@@ -24,7 +24,7 @@ const Navbar = () => {
         whileInView="show"
         className="xPaddings relative py-8"
       >
-        <div className="gradient-01 absolute inset-0 w-[50%]" />
+        {/* <div className="gradient-01 absolute inset-0 -z-10 w-[50%]" /> */}
 
         <div className="innerWidth mx-auto flex justify-between gap-8">
           <img
