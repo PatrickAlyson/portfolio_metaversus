@@ -3,6 +3,8 @@
 This is a portfolio website about the [metaverse](https://en.wikipedia.org/wiki/Metaverse) created with [NextJs](https://nextjs.org/), [tailwindcss](https://tailwindcss.com/) and [framer motion](https://www.framer.com/motion/).
 This project is based on the following figma design: [https://www.figma.com/file/EyzNoOFak1Nb1bBx9ZKI7E/Modern-UI%2FUX-Framer-Motion?node-id=0%3A1](https://www.figma.com/file/EyzNoOFak1Nb1bBx9ZKI7E/Modern-UI%2FUX-Framer-Motion?node-id=0%3A1).
 
+## Live demo at [https://portfolio-metaversus.vercel.app/](https://portfolio-metaversus.vercel.app/)
+
 ### Desktop version:
 
 [![metaverse.png](https://i.postimg.cc/hj9R5Nr5/metaverse.png)](https://postimg.cc/7GYRCsj3)
