@@ -1,3 +1,5 @@
+"use client";
+
 const StartSteps = ({ number, text }) => (
   <div className="flexCenter flex-row">
     <div className="flexCenter h-[70px] w-[70px] rounded-[24px] bg-[#323f5d]">
