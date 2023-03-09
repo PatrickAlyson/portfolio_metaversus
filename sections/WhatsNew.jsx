@@ -7,6 +7,7 @@ import { newFeatures } from "../constants";
 
 const WhatsNew = () => (
   <section className="paddings relative z-10">
+    <div className="gradient-06 -z-10"></div>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

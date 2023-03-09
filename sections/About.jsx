@@ -7,6 +7,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 const About = () => (
   <section className="paddings relative z-10">
     <div className="gradient-02 z-0" />
+    <div className="gradient-06 z-0"></div>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -32,6 +33,7 @@ const About = () => (
         dreams into reality. Let's explore the madness of the metaverse
         scrolling down.
       </motion.p>
+
       <motion.img
         variants={fadeIn("up", "tween", 0.3, 1)}
         src="/arrow-down.svg"
