@@ -22,7 +22,7 @@ const Explore = () => {
         <TitleText
           title={
             <>
-              Choose the world you want <br className="hidden md:block" />
+              Choose the world you want <br className="z-10 hidden md:block" />
               to explore
             </>
           }

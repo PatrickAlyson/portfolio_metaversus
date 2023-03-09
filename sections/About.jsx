@@ -13,7 +13,7 @@ const About = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="innerWidth flexCenter mx-auto flex-col"
+      className="innerWidth flexCenter z-10 mx-auto flex-col"
     >
       <TypingText title="| About Metaversus" textStyles="text-center" />
       <motion.p
