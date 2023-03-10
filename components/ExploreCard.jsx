@@ -14,6 +14,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     <img
       src={imgUrl}
       alt={title}
+      loading="lazy"
       className="absolute h-full w-full rounded-[24px] object-cover"
     />
     {active !== id ? (

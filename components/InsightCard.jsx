@@ -10,6 +10,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index }) => (
   >
     <img
       src={imgUrl}
+      loading="lazy"
       alt="planet"
       className="h-[250px] w-full rounded-[32px] object-cover md:w-[270px]"
     />
