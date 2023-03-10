@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import Image from "next/image";
+import coverImage from "../public/cover.png";
+import stampImage from "../public/stamp.png";
 
 function Hero() {
   return (
@@ -32,15 +35,17 @@ function Hero() {
           className="relative -mt-[12px] w-full md:-mt-[20px]"
         >
           <div className="hero-gradient absolute -top-[30px] z-[0] h-[300px] w-full rounded-tl-[140px]" />
-          <img
-            src="/cover.png"
+          <Image
+            src={coverImage}
+            priority
             alt="cover"
             className="relative z-10 h-[350px] w-full rounded-tl-[140px] object-cover sm:h-[500px]"
           />
           <a href="#explore">
             <div className="relative z-10 -mt-[50px] flex w-full justify-end pr-[40px] sm:-mt-[70px]">
-              <img
-                src="/stamp.png"
+              <Image
+                src={stampImage}
+                priority
                 alt="stamp"
                 className="h-[100px] w-[100px] object-contain sm:h-[155px] sm:w-[155px]"
               />

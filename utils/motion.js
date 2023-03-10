@@ -168,7 +168,7 @@ export const modalVariants = {
   show: {
     height: "95%",
     top: "2.5%",
-    transition: { duration: 0.5 },
+    transition: { duration: 0.3 },
   },
   exit: {
     height: 0,

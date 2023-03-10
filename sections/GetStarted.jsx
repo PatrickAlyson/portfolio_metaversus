@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { TypingText, StartSteps, TitleText } from "../components";
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
 import { startingFeatures } from "../constants";
+import Image from "next/image";
+import getStartedImage from "../public/get-started.png";
 
 const GetStarted = () => (
   <section className="paddings relative z-10">
@@ -19,8 +21,8 @@ const GetStarted = () => (
         variants={planetVariants("left")}
         className="flexCenter flex-1"
       >
-        <img
-          src="/get-started.png"
+        <Image
+          src={getStartedImage}
           alt="get-started"
           className="w-[90%]h-[90%] object-contain"
         />
