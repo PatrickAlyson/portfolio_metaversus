@@ -9,7 +9,7 @@ import whatsNewImage from "../public/whats-new.png";
 
 const WhatsNew = () => (
   <section className="paddings relative z-10">
-    <div className="gradient-06 -z-10"></div>
+    {/* <div className="gradient-06 -z-10" /> */}
     <motion.div
       variants={staggerContainer}
       initial="hidden"

@@ -7,7 +7,7 @@ import { insights } from "../constants";
 
 const Insights = () => (
   <section className="paddings relative z-10">
-    <div className="gradient-04 -z-10"></div>
+    {/* <div className="gradient-04 -z-10" /> */}
     <motion.div
       variants={staggerContainer}
       initial="hidden"

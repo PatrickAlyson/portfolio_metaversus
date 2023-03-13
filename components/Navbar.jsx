@@ -2,15 +2,20 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { navVariants, modalVariants } from "../utils/motion";
+import { navVariants, modalVariants, modalTextVariant } from "../utils/motion";
 import { socials } from "../constants";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   const modalToggle = () => {
     setIsModalOpen((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (window.innerWidth > 768) setIsMobile(false);
+  }, []);
 
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", isModalOpen);
@@ -24,8 +29,6 @@ const Navbar = () => {
         whileInView="show"
         className="xPaddings relative py-8"
       >
-        {/* <div className="gradient-01 absolute inset-0 -z-10 w-[50%]" /> */}
-
         <div className="innerWidth mx-auto flex justify-between gap-8">
           <img
             src="/search.svg"
@@ -50,17 +53,18 @@ const Navbar = () => {
       <AnimatePresence>
         {isModalOpen && (
           <motion.div
-            className="absolute left-[2.5%] z-50 h-[95%] w-[95%] rounded-sm bg-white"
-            variants={modalVariants}
+            className="absolute left-[2.5%] top-[2.5%] z-50 h-[95%] w-[95%] rounded-sm bg-white"
+            variants={isMobile ? "" : modalVariants}
             initial="hidden"
             animate="show"
             exit="exit"
           >
             <motion.div
               className="relative flex h-full w-full flex-col items-center justify-around p-10"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { delay: 0.5 } }}
-              exit={{ opacity: 0, transition: { duration: 0.1 } }}
+              variants={isMobile ? "" : modalTextVariant}
+              initial="hidden"
+              animate="show"
+              exit="exit"
             >
               <button
                 type="button"

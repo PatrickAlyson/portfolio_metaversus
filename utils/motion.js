@@ -101,7 +101,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
       type,
       delay,
       duration,
-      ease: "easeOut",
+      // ease: "easeOut",
     },
   },
 });
@@ -176,4 +176,10 @@ export const modalVariants = {
     opacity: 0,
     transition: { delay: 0.2 },
   },
+};
+
+export const modalTextVariant = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { delay: 0.2 } },
+  exit: { opacity: 0, transition: { duration: 0.1 } },
 };
