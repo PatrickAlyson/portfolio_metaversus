@@ -66,13 +66,18 @@
   filter: blur(125px);
 }
 
-.hero-gradient {
+/* .hero-gradient {
   background: linear-gradient(
     97.86deg,
     #a509ff 0%,
     #34acc7 53.65%,
     #a134c7 100%
   );
+} */
+
+.hero-gradient {
+  background-image: url("/gradient-hero.png");
+  background-size: contain;
 }
 
 .gradient-02 {
