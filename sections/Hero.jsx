@@ -34,7 +34,7 @@ function Hero() {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="relative -mt-[12px] w-full md:-mt-[20px]"
         >
-          {/* <div className="hero-gradient absolute -top-[30px] z-[0] h-[300px] w-full rounded-tl-[140px]" /> */}
+          <div className="hero-gradient absolute -top-[30px] z-[0] h-[300px] w-full rounded-tl-[140px]" />
           <Image
             src={coverImage}
             priority
